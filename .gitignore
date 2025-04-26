@@ -1,6 +1,9 @@
 # Visual Studio 2015 user specific files
 .vs/
 
+# Visual Studio 2015 database file
+*.VC.db
+
 # Compiled Object files
 *.slo
 *.lo
@@ -41,13 +44,30 @@
 *.VC.db
 *.VC.opendb
 
+# Linux generated project files
+.idea/
+.kdev4/
+.vscode/
+*.pri
+*.code-workspace
+*.kdev4
+*.pro
+*.workspace
+Makefile
+CMakeLists.txt
+*CodeCompletionFolders.txt
+*CodeLitePreProcessor.txt
+
 # Precompiled Assets
 SourceArt/**/*.png
 SourceArt/**/*.tga
 
 # Binary Files
 Binaries/*
-Plugins/**/Binaries/*
+Plugins/*/Binaries/*
+
+# Packaged builds
+dist/*
 
 # Builds
 Build/*
@@ -68,7 +88,7 @@ Saved/*
 
 # Compiled source files for the engine to use
 Intermediate/*
-Plugins/**/Intermediate/*
+Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
